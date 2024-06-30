@@ -1,0 +1,49 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"Playwrite US Trad", cursive;;
+}
+
+.hero{
+	position:relative;
+	background: url('S.jpg') no-repeat;
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+}
+.hero::before{
+	content: '';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,0.2);
+	z-index:1;
+}
+h1{
+	color:ghostwhite;
+	font-size:52px;
+}
+
+p{
+	font-size: 26px;
+	color:ghostwhite;
+}
+
+.hero-content{
+	z-index:2;
+}
+.mybtn{
+	background-color:lightslategrey;
+	color:whitesmoke;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 24px;
+}
+.mybtn:hover{
+	background-color:palegoldenrod;
+}
